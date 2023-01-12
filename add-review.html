@@ -118,15 +118,15 @@ textarea {
 
     <script>
       function hodnotyGulicky(){
-      let p = document.getElementById("ciselneHodnotenie");
+      let h1 = document.getElementById("ciselneHodnotenie");
       console.log(x);
-      p.innerText = x.value;
+      h1.value = x.value;
     }
     </script>
 
     <p>Tvoje hodnotenie filmu (od 0 do 100)</p>
-    <p id="ciselneHodnotenie"> </p>
-    <input onmousemove="hodnotyGulicky(this)" onchange="hodnotyGulicky(this) " type="range" name="hodnotenie" id step="10" min="0" max="100">
+    <input type="text" id="ciselneHodnotenie" value="50">
+    <input onmousemove="hodnotyGulicky(this)" onchange="hodnotyGulicky(this) " type="range" name="hodnotenie" id="range" step="10" min="0" max="100" value="50">
     
     <p>Žáner filmu</p>
     <input type="radio" id="komedia" name="zaner" value="komédia">
