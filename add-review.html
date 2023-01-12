@@ -116,6 +116,9 @@ textarea {
     <p>Kedy si film naposledy videl?</p>
     <input type="date" name="datum" id="">
 
+    
+
+    <p>Tvoje hodnotenie filmu (od 0 do 100)</p>
     <script>
       function hodnotyGulicky(x){
       let h1 = document.getElementById("ciselneHodnotenie");
@@ -123,8 +126,7 @@ textarea {
       h1.value = x.value;
     }
     </script>
-
-    <p>Tvoje hodnotenie filmu (od 0 do 100)</p>
+    
     <input type="text" id="ciselneHodnotenie" value="50">
     <input onmousemove="hodnotyGulicky(this)" onchange="hodnotyGulicky(this) " type="range" name="hodnotenie" id="range" step="10" min="0" max="100" value="50">
     
